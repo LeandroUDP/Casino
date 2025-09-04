@@ -1,0 +1,30 @@
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Acceso al casino</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="login-page">
+  <a href="index.html" class="volverInicio">Inicio</a>
+  <main>
+    <section class="login__card" aria-labelledby="titulo-login">
+      <h1 id="titulo-login" class="login__title">Iniciar sesión</h1>
+      <form class="login__form" action="perfil.html" method="get" novalidate>
+        <div class="login__field">
+          <label class="login__label" for="usuario">Nombre de usuario</label>
+          <input class="login__input" id="usuario" name="usuario" type="text" required autocomplete="username">
+        </div>
+
+        <div class="login__field">
+          <label class="login__label" for="clave">Contraseña</label>
+          <input class="login__input" id="clave" name="clave" type="password" required autocomplete="current-password">
+        </div>
+
+        <button type="submit" class="login__btn">Entrar</button>
+      </form>
+
+      <p class="login__note">¿No tienes cuenta? <a href="registro.html">Regístrate</a></p>
+  </main>
+</body>
+</html>

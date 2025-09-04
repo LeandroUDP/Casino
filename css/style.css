@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+}
+
+.volverInicio {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: #222;
+  color: #ffffff;
+  padding: 10px 18px;
+  border-radius: 10px;
+  font-weight: bold;
+  text-decoration: none;
+  z-index: 1000;
+}
+
+.volverInicio:hover {
+    background: #ffffff;
+    color: #000000;
+}
+
+
+.index-page {
+    background: #000000 url("../images/fondoIndex.jpg") center center/cover no-repeat;
+    overflow-y: hidden;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+   padding: 16px;
+}
+
+.recuadro {
+    background: #454343;  
+    border-radius: 10px;
+    max-width: 400px;
+    margin: 150px auto;
+    padding: 30px 30px;
+    text-align: center;
+    min-height: 300px;
+}
+
+
+
+.titulo-casino {
+    text-align: center;     
+    margin-bottom: 40px;   
+    color: #FFffff;        
+    font-size: 3rem;
+    font-family: 'Georgia', Arial, sans-serif; 
+}
+
+.mi-lista {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: block;
+    justify-content: center;
+    gap: 18px;
+}
+
+.mi-lista a {
+    font-family: 'Poppins', Arial, sans-serif;
+    background: #222;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 22px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background 0.2s;
+    display: block;           
+    margin-bottom: 14px;
+}
+.mi-lista a:hover {
+    background: #ffffff;
+    color: #000000;
+}
+
+.login-page {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 16px;
+  background: #000000 url("../images/Fondo3.jpg") center center/cover no-repeat;; 
+}
+
+.login__card {
+  width: min(360px, 92vw);
+  background: #222;
+  border: 1px solid #222;
+  border-radius: 10px;
+  padding: 16px;
+  box-shadow: 0 6px 16px rgba(255, 255, 255, 0.05);
+}
+
+.login__title {
+  margin: 0 0 8px 0;
+  font-size: 1.25rem;
+  color:#ffffff;
+
+}
+
+.login__form { margin-top: 8px; }
+
+.login__field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+
+.login__label {
+  font-size: .95rem;
+  color: #ffffff;
+}
+
+.login__input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  background: #fff;
+  color: #222;
+}
+
+.login__input:focus {
+  border-color: #000000;
+  box-shadow: 0 0 0 3px rgba(138,180,248,.3);
+}
+
+.login__btn {
+  width: 100%;
+  padding: 10px 12px;
+  border: 0;
+  border-radius: 8px;
+  background: #454343;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.login__btn:hover { opacity: .95; }
+
+.login__note {
+  margin-top: 10px;
+  font-size: .95rem;
+  color: #555;
+  text-align: center;
+}
+
+.login__note a {
+  color: #ea0a0a;
+  text-decoration: none;
+}
+.login__note a:hover { text-decoration: underline; }
+
+
+
+
+
+
+
+.registro-page {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 16px;
+  background: #000000 url("../images/fondoRegistro.jpg") center center/cover no-repeat;; 
+}
+
+.registro__card {
+  width: min(360px, 92vw);
+  background: #222;
+  border: 1px solid #222;
+  border-radius: 10px;
+  padding: 16px;
+  box-shadow: 0 6px 16px rgba(255, 255, 255, 0.05);
+}
+
+.registro__title {
+  margin: 0 0 8px 0;
+  font-size: 1.25rem;
+  color:#ffffff;
+
+}
+
+.registro__form { margin-top: 8px; }
+
+.registro__field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+
+.registro__label {
+  font-size: .95rem;
+  color: #ffffff;
+}
+
+.registro__input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  background: #fff;
+  color: #222;
+}
+
+.registro__input:focus {
+  border-color: #000000;
+  box-shadow: 0 0 0 3px rgba(138,180,248,.3);
+}
+
+.registro__btn {
+  width: 100%;
+  padding: 10px 12px;
+  border: 0;
+  border-radius: 8px;
+  background: #454343;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.registro__btn:hover { opacity: .95; }
+
+.registro__note {
+  margin-top: 10px;
+  font-size: .95rem;
+  color: #555;
+  text-align: center;
+}
+
+.registro__note a {
+  color: #ea0a0a;
+  text-decoration: none;
+}
+.registro__note a:hover { text-decoration: underline; }

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Registrarse</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="registro-page">
+      <a href="index.html" class="volverInicio">Inicio</a>
+  <main>
+    <section class="registro__card" aria-labelledby="titulo-registro">
+      <h1 id="titulo-registro" class="registro__title">Registrarse</h1>
+      <form class="registro__form" action="perfil.html" method="post" novalidate>
+        <div class="registro__field">
+          <label class="registro__label" for="usuario">Nombre de usuario</label>
+          <input class="registro__input" id="usuarioR" name="usuario" type="text" required autocomplete="username">
+        </div>
+
+        <div class="registro__field">
+          <label class="registro__label" for="clave">Contraseña</label>
+          <input class="registro__input" id="claveR" name="clave" type="password" required autocomplete="current-password">
+        </div>
+
+        <button type="submit" class="registro__btn">Registrase</button>
+      </form>
+
+      <p class="registro__note">¿Ya tienes una cuenta? <a href="login.html">Iniciar sesión</a></p>
+    </section>
+  </main>
+</body>
+</html>
