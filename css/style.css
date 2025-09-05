@@ -33,7 +33,7 @@ body {
     min-height: 100vh;
     display: grid;
     place-items: center;
-   padding: 16px;
+    padding: 16px;
 }
 
 .recuadro {
@@ -51,7 +51,7 @@ body {
 .titulo-casino {
     text-align: center;     
     margin-bottom: 40px;   
-    color: #FFffff;        
+    color: #FF0000;        
     font-size: 3rem;
     font-family: 'Georgia', Arial, sans-serif; 
 }
@@ -68,7 +68,7 @@ body {
 .mi-lista a {
     font-family: 'Poppins', Arial, sans-serif;
     background: #222;
-    color: #ffffff;
+    color: #ff0000;
     text-decoration: none;
     padding: 10px 22px;
     border-radius: 8px;
@@ -246,7 +246,7 @@ body {
 }
 .registro__note a:hover { text-decoration: underline; }
 
-body {
+.ruleta_page {
   background: radial-gradient(circle at top, #206909 0%, #000 100%);
   font-family: 'Poppins', sans-serif;
   color: #fff;
@@ -392,4 +392,114 @@ footer {
   padding: 1rem;
   color: #ccc;
   font-size: 0.9rem;
+}
+
+.Info{
+  overflow: hidden;
+}
+
+.chart1 { 
+  background-color: #222;
+  color: #f2f2f2;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 20px auto;
+  max-width: 500px;
+  font-family: 'Segoe UI', sans-serif;
+  transition: box-shadow 0.5s ease;
+  cursor: pointer;
+}
+
+.chart1 .contenido {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.5s ease, opacity 0.5s ease;
+}
+
+.chart1:hover .contenido {
+  max-height: 50px; 
+  opacity: 1;
+}
+
+.chart2 { 
+  background-color: #222;
+  color: #f2f2f2;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 20px auto;
+  max-width: 500px;
+  font-family: 'Segoe UI', sans-serif;
+  transition: box-shadow 0.5s ease;
+  cursor: pointer;
+}
+
+.chart2 .contenido2 {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.5s ease, opacity 0.5s ease;
+}
+
+.chart2:hover .contenido2 {
+  max-height: 100px; 
+  opacity: 1;
+}
+
+.chart3 { 
+  background-color: #222;
+  color: #f2f2f2;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 20px auto;
+  max-width: 500px;
+  font-family: 'Segoe UI', sans-serif;
+  transition: box-shadow 0.5s ease;
+  cursor: pointer;
+}
+
+.chart3 .contenido3 {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.5s ease, opacity 0.5s ease;
+}
+
+.chart3:hover .contenido3 {
+  max-height: 100px; 
+  opacity: 1;
+}
+
+.chart4 { 
+  background-color: #222;
+  color: #f2f2f2;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 20px auto;
+  max-width: 500px;
+  font-family: 'Segoe UI', sans-serif;
+  transition: box-shadow 0.5s ease;
+  cursor: pointer;
+}
+
+.chart4 .contenido4 {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.5s ease, opacity 0.5s ease;
+}
+
+.chart4:hover .contenido4 {
+  max-height: 100px; 
+  opacity: 1;
+}
+
+.informacion {
+  background-color: #222;
+  color: #ff0000;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 40px auto;
+  max-width: 500px;
+  font-family: 'Segoe UI', sans-serif;
 }
