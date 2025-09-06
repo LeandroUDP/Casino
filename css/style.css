@@ -525,5 +525,208 @@ footer {
 .InfoRuleta {
   background: url("../images/FondoInfoRuleta.png") center center/cover no-repeat;
 }
-  background: url("../images/FondoInfoRuleta.png") center center/cover no-repeat;
+/* inicio de Transacciones*/
+
+.transacciones-page{
+  background: #000000 url("../images/Fondo3.jpg") center center/cover no-repeat;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 16px;
+}
+
+.panel-transacciones{
+  background: rgba(0,0,0,0.5);
+  border: 2px solid #00FF00;
+  border-radius: 10px;
+  max-width: 1100px;
+  width: 100%;
+  margin: auto;
+  padding: 24px;
+  color:#ffffff;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.45);
+}
+
+.panel-transacciones .titulo{
+  text-align:center;
+  margin: 0 0 18px 0;
+  color:#00ff00;
+  font-size: 2rem;
+  font-family: 'Georgia', Arial, sans-serif;
+  letter-spacing: 1px;
+}
+
+.resumen{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.resumen .card{
+  border: 2px solid #00ff0088;
+  background: #000000a3;
+  border-radius: 10px;
+  padding: 14px 16px;
+}
+
+.resumen .card h3{
+  font-size: .95rem;
+  color:#eaeaea;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.resumen .valor{
+  font-size: 1.6rem;
+  font-weight: 800;
+  color:#09ff00;
+}
+
+.filtros{
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1fr 1fr auto;
+  gap: 12px;
+  align-items: end;
+  margin: 6px 0 16px 0;
+}
+
+.filtros .campo{
+  display:flex;
+  flex-direction: column;
+  gap:6px;
+}
+
+.filtros label{
+  font-size:.9rem;
+  color:#eaeaea;
+  margin-left: 4px;
+}
+
+.filtros input,
+.filtros select{
+  background: rgba(0,0,0,0.6);
+  border: 1px solid #00ff0066;
+  border-radius: 8px;
+  padding: 10px 12px;
+  color:#ffffff;
+  outline: none;
+}
+
+.filtros input::placeholder{
+  color: #bdbdbd;
+}
+
+.btn{
+  border: 2px solid #00FF00;
+  background: transparent;
+  color:#ffffff;
+  padding: 10px 14px;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all .2s ease;
+}
+.btn:hover{
+  background: #ffffff;
+  color: #000000;
+}
+.tabla-wrapper{
+  overflow:auto;
+  border: 2px solid #00ff0088;
+  border-radius: 10px;
+  background: #000000a3;
+}
+
+.tabla-transacciones{
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 780px;
+  color:#eaeaea;
+}
+
+.tabla-transacciones thead th{
+  position: sticky;
+  top: 0;
+  background: #000000e0;
+  color:#ffffff;
+  font-weight: 700;
+  text-align: left;
+  padding: 12px 14px;
+  border-bottom: 1px solid rgba(0,0,0,0.46);
+}
+
+.tabla-transacciones tbody td{
+  padding: 12px 14px;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+.tabla-transacciones tbody tr:nth-child(even){
+  background: rgba(255,255,255,0.02);
+}
+
+.tabla-transacciones tbody tr:hover{
+  background: rgba(0,255,0,0.06);
+}
+
+.badge{
+  display:inline-block;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: .85rem;
+  font-weight: 700;
+  letter-spacing: .3px;
+}
+
+.badge--exito{
+  background: rgba(0, 255, 0, 0.15);
+  color:#00ff00;
+  border: 1px solid #00ff0077;
+}
+
+.badge--pendiente{
+  background: rgba(255, 217, 0, 0.12);
+  color:#ffd54f;
+  border: 1px solid #ffd54f66;
+}
+
+.badge--fallido{
+  background: rgba(255, 82, 82, 0.12);
+  color:#ff5252;
+  border: 1px solid #ff525266;
+}
+
+.paginacion{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.paginacion a,
+.paginacion button{
+  border: 2px solid #00FF00;
+  background: transparent;
+  color:#ffffff;
+  padding: 8px 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.paginacion .activo{
+  background: #00ff00;
+  color:#000000;
+  border-color: #00ff00;
+}
+
+@media (max-width: 992px){
+  .resumen{ grid-template-columns: repeat(2, 1fr); }
+  .filtros{ grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 560px){
+  .resumen{ grid-template-columns: 1fr; }
+  .panel-transacciones .titulo{ font-size: 1.6rem; }
 }
