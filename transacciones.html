@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transacciones</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/transacciones.css">
+</head>
+<body class="transacciones-page">
+  <a href="index.html" class="volverInicio">Inicio</a>
+
+  <main class="panel-transacciones" role="main">
+    <h1 class="titulo">Transacciones</h1>
+
+    <section class="resumen" aria-label="Resumen de saldos y movimientos">
+      <article class="card">
+        <h3>Saldo actual</h3>
+        <div class="valor">$ 0</div>
+      </article>
+      <article class="card">
+        <h3>Depósitos (mes)</h3>
+        <div class="valor">$ 0</div>
+      </article>
+      <article class="card">
+        <h3>Retiros (mes)</h3>
+        <div class="valor">$ 0</div>
+      </article>
+      <article class="card">
+        <h3>Apuestas (mes)</h3>
+        <div class="valor">$ 0</div>
+      </article>
+    </section>
+
+    <form class="filtros" action="#" method="get">
+      <div class="campo">
+        <label for="buscar">Buscar (ID o concepto)</label>
+        <input id="buscar" name="q" type="text" placeholder="Ej: #A-1024 o 'ruleta'">
+      </div>
+      <div class="campo">
+        <label for="tipo">Tipo</label>
+        <select id="tipo" name="tipo">
+          <option value="">Todos</option>
+          <option value="deposito">Depósito</option>
+          <option value="retiro">Retiro</option>
+          <option value="apuesta">Apuesta</option>
+        </select>
+      </div>
+      <div class="campo">
+        <label for="desde">Desde</label>
+        <input id="desde" name="desde" type="date">
+      </div>
+      <div class="campo">
+        <label for="hasta">Hasta</label>
+        <input id="hasta" name="hasta" type="date">
+      </div>
+      <button class="btn" type="submit">Aplicar</button>
+    </form>
+
+    <div class="tabla-wrapper">
+      <table class="tabla-transacciones" aria-describedby="tabla-ayuda">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Fecha</th>
+            <th>Tipo</th>
+            <th>Método</th>
+            <th>Detalle</th>
+            <th>Monto</th>
+            <th>Saldo</th>
+            <th>Estado</th>
+          </tr>
+        </thead>
+       
+      </table>
+      <p id="tabla-ayuda" hidden>Tabla de historial de transacciones con columnas: id, fecha, tipo, método, detalle, monto, saldo y estado.</p>
+    </div>
+
+    <!-- Paginación -->
+    <nav class="paginacion" aria-label="Paginación">
+      <a href="#" aria-disabled="true">Anterior</a>
+      <button class="activo">1</button>
+      <button>2</button>
+      <button>3</button>
+      <a href="#">Siguiente</a>
+    </nav>
+  </main>
+</body>
+</html>
