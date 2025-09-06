@@ -250,6 +250,8 @@ body {
 }
 .registro__note a:hover { text-decoration: underline; }
 
+/*inicio de la ruleta  */ 
+
 .ruleta_page {
   background: radial-gradient(circle at top, #206909 0%, #000 100%);
   font-family: 'Poppins', sans-serif;
@@ -259,14 +261,10 @@ body {
 }
 
 h1, h2, h3 {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Poppins', sans-serif;
   text-align: center;
-  color: #ff0000;
+  color: #ffffff;
   margin-bottom: 1rem;
-}
-
-a {
-  text-decoration: none;
 }
 
 .botones {
@@ -299,7 +297,7 @@ a {
   align-items: flex-start;
   gap: 4rem;
   margin: 2rem auto;
-  max-width: 1000px;
+  max-width: 1300px;
 }
 
 .ruleta {
@@ -307,7 +305,7 @@ a {
   max-width: 100%;
   height: auto;
   border-radius: 12px;
-  box-shadow: 0 0 25px rgba(216, 4, 4, 0.5);
+
 }
 .panel-derecho {
   flex: 1;
@@ -345,7 +343,7 @@ a {
 .tabla-apuestas, .tabla-resultados {
   width: 300px;
   border-collapse: collapse;
-  background: #5e5e5e;
+  background: #908f8f;
   border-radius: 10px;
   overflow: hidden;
   color: #fff;
@@ -359,15 +357,15 @@ a {
 }
 
 .tabla-apuestas thead th, .tabla-resultados thead th {
-  background: #4a4c4d;
+  background: #5c5d5d;
 }
 
 .rojo {
-  color: #e74c3c;
+  color: #ff1900;
   font-weight: bold;
 }
 .negro {
-  color: #ecf0f1;
+  color: #000000;
   font-weight: bold;
 }
 .verde {
@@ -392,11 +390,14 @@ a {
 
 footer {
   text-align: center;
-  margin-top: 3rem;
   padding: 1rem;
   color: #ccc;
   font-size: 0.9rem;
+  background: transparent;
+  margin-top: 10rem;
 }
+/*fin de la ruleta  */ 
+
 
 .Info{
   overflow: hidden;
@@ -513,6 +514,7 @@ footer {
   max-width: 500px;
   font-family: 'Segoe UI', sans-serif;
 }
+
 
 .chart1 h2, .chart2 h2, .chart3 h2, .chart4 h2 {
   color: #ffffff;
