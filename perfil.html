@@ -1,10 +1,111 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Perfil de Usuario</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfil de Usuario</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/perfil.css">
 </head>
-<body class="perfilPage">
-    
+<body class="perfil-page">
+  <a href="index.html" class="volverInicio">Inicio</a>
+
+  <main class="perfil-panel" role="main">
+    <!-- Header Perfil -->
+    <header class="perfil-header">
+      <img class="perfil-avatar" src="images/Perfil.jpg" alt="Avatar del usuario">
+      <div>
+        <div class="perfil-nombre">Usuario1.</div>
+        <div class="perfil-usuario">@usuario123</div>
+      </div>
+      <div class="perfil-actions">
+        <a class="btn" href="registro.html">Editar perfil</a>
+        <a class="btn" href="login.html">Cerrar sesión</a>
+      </div>
+    </header>
+    <section class="perfil-grid">
+      <article class="card">
+        <h3>Saldo disponible</h3>
+        <div class="saldo">$ 125.430</div>
+        <a class="btn-ruleta btn" href="ruleta.html">🎲 Tirar ruleta</a>
+      </article>
+      <article class="card">
+        <h3>Últimas transacciones</h3>
+        <table class="table-mini" aria-label="Últimas transacciones">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Fecha</th>
+              <th>Tipo</th>
+              <th>Monto</th>
+              <th>Estado</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>#A-1034</td>
+              <td>2025-09-06</td>
+              <td>Depósito</td>
+              <td>$ 20.000</td>
+              <td>Éxito</td>
+            </tr>
+            <tr>
+              <td>#B-1029</td>
+              <td>2025-09-05</td>
+              <td>Apuesta</td>
+              <td>-$ 2.000</td>
+              <td>Perdida</td>
+            </tr>
+            <tr>
+              <td>#B-1028</td>
+              <td>2025-09-05</td>
+              <td>Apuesta</td>
+              <td>$ 6.000</td>
+              <td>Ganada</td>
+            </tr>
+            <tr>
+              <td>#R-1012</td>
+              <td>2025-09-04</td>
+              <td>Retiro</td>
+              <td>-$ 30.000</td>
+              <td>Éxito</td>
+            </tr>
+            <tr>
+              <td>#A-1008</td>
+              <td>2025-09-03</td>
+              <td>Depósito</td>
+              <td>$ 50.000</td>
+              <td>Pendiente</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <a href="transacciones.html" class="ver-todo">Ver todas las transacciones</a>
+      </article>
+
+      <!-- Columna Derecha: Stats / Info -->
+      <aside class="card">
+        <h3>Resumen</h3>
+        <div class="stats">
+          <div class="stat">
+            <span>Apuestas totales</span>
+            <strong>58</strong>
+          </div>
+          <div class="stat">
+            <span>Ganadas</span>
+            <strong>24</strong>
+          </div>
+          <div class="stat">
+            <span>Perdidas</span>
+            <strong>34</strong>
+          </div>
+          <div class="stat">
+            <span>Racha actual</span>
+            <strong>+2</strong>
+          </div>
+        </div>
+      </aside>
+    </section>
+  </main>
 </body>
+</html>
